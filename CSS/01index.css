@@ -1,0 +1,53 @@
+/*  DEFININDO CSS*/
+body {
+    /* CORPO PRINCIPAL*/
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: linear-gradient(90deg, gray, rgb(0, 58, 58));
+}
+
+.nome-sistema {
+    /* TARJA COM NOME DO SISTEMA  */
+    background-color: darkgoldenrod;
+    text-align: center;
+    transform: translate();
+}
+
+.tela-login {
+    /* AREA DO LOGIN */
+    background-color: rgba(0, 0, 0, 0.3);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 60px;
+    border-radius: 15px;
+    color: white;
+    border: 3px solid darkgoldenrod;
+}
+
+
+input {
+    /* AREA ONDE DIGITA DENTRO DO LOGIN*/
+    padding: 15px;
+    border: none;
+    outline: none;
+    border-radius: 15px;
+    font-size: 15px;
+}
+
+button {
+    /* BOTAO PARA ENTRAR DENTRO DO LOGIN*/
+    background-color: dodgerblue;
+    border: none;
+    padding: 15px;
+    width: 100%;
+    border-radius: 15px;
+    color: black;
+    font-size: 15px;
+}
+
+button:hover {
+    /* INTERACAO PARA MUDAR DE COR BOTAO DO LOGIN */
+    background-color: chartreuse;
+    cursor: pointer;
+}

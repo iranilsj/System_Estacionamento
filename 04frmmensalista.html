@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon"
+        href="https://icons.iconarchive.com/icons/cornmanthe3rd/metronome/256/System-settings-icon.png"
+        type="image/x-icon">
+    <title>Mensalista</title>
+    <link rel="stylesheet" href="CSS/04frmmensalista.css"> <!--PARA LINKAR O CSS DA PAGINA-->
+  <body>
+    <div class="nome-sistema">
+        <hr>
+        <h2>-Sistema para Gerenciamento de estacionamento-</h2>
+        <hr>
+    </div>
+    <br><a href="02menu.html" class="botao"><button>Voltar</button></a>
+    <div class="frm-clientes">
+        <form class="form" action="002cofig04frmmensalista.php" method="POST">
+            <fieldset>
+                <legend><b>CADASTRO MENSALISTA</b></legend>
+                <br>
+                <div class="input-nome">
+                    <input type="text" name="nome" id="nome" class="inputUser" required>
+                    <label for="nome" class="labelInput">Nome Completo</label><br><br/>
+                </div>
+                <div class="input-cpf">
+                    <input type="text" name="cpf" id="cpf" class="inputUser" maxlength="14" class="inputUser"
+                        required>
+                    <label for="cpf" class="labelInput">CPF</label><br><br/>
+                </div>
+                <div class="input-rg">
+                    <input type="text" name="rg" id="rg" class="inputUser" required>
+                    <label for="rg" class="labelInput">RG</label><br><br>
+                </div>
+                <div class="input-celular">
+                    <input type="tel" name="celular" id="celular" class="inputUser" required>
+                    <label for="celular" class="labelInput">Celular</label><br/><br/>
+                </div>
+                <div class="center">
+                    <label for="data_nas">Data de Nascimento</label>
+                    <input type="date" id="data_nas" name="data_nas" class="inputUser"><br><br>
+                </div>
+                <div class="input-cep">
+                    <input type="text" name="cep" id="cep" class="inputUser" required>
+                    <label for="cep" class="labelInput">CEP</label><br><br>
+                </div>
+                <div class="input-end">
+                    <input type="text" name="endereco" id="endereco" class="inputUser" required>
+                    <label for="endereco" class="labelInput">Endereço</label><br><br>
+                </div>
+                <div class="input-num">
+                    <input type="number" name="numero" id="numero" class="inputUser" required>
+                    <label for="numero" class="labelInput">Número</label><br><br>
+                </div>
+                <div class="input-complemento">
+                    <input type="text" name="complemento" id="complemento" class="inputUser">
+                    <label for="complemento" class="labelInput">Complemento</label><br><br>
+                </div>
+                <div class="input-bairro">
+                    <input type="text" name="bairro" id="bairro" class="inputUser" required>
+                    <label for="bairro" class="labelInput">Bairro</label><br><br>
+                </div>
+                </head>
+                <div class="input-cidade">
+                    <input type="text" name="cidade" id="cidade" class="inputUser" required>
+                    <label for="cidade" class="labelInput">Cidade</label><br><br/>
+                </div>
+                <div class="input-estado">
+                    <input type="text" name="estado" id="estado" class="inputUser" required>
+                    <label for="estado" class="labelInput">Estado</label><br><br>
+                </div>
+                <input type="submit" value="Cadastrar usuário" class="btn btn-success"
+                    onclick="alert('Usuário Cadastrado com Sucesso')" window.location.href = '05cadastrarVeiculos.php'return false;" type="submit" name="salvarmensalista"
+                    id="submit">
+            </fieldset>
+        </form>
+    </div>
+</body>
+
+</html>

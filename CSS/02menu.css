@@ -1,0 +1,49 @@
+ /*  DEFININDO CSS*/
+ body {
+    /* CORPO PRINCIPAL*/
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: linear-gradient(90deg, gray, rgb(0, 58, 58));
+}
+
+.nome-sistema {
+    /* TARJA COM NOME DO SISTEMA  */
+    background-color: darkgoldenrod;
+    text-align: center;
+    transform: translate();
+}    
+
+fieldset {
+    border: 3px solid darkgoldenrod;
+}
+
+.bloco-menu {
+    /* BLOCO DO MENU */
+    background-color: rgba(0, 0, 0, 0.3);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -45%);
+    padding: 40px;
+    border-radius: 15px;
+    color: white;
+    border: 3px solid darkgoldenrod;
+    text-align: center;
+    font-size: 25px;
+}
+
+button {
+    /* BOTOES PARA ENTRAR NOS LINKS DO MENU*/
+    background-color: dodgerblue;
+    border: none;
+    padding: 15px;
+    width: 100%;
+    border-radius: 15px;
+    color: black;
+    font-size: 20px;
+}
+
+button:hover {
+    /* INTERACAO PARA MUDAR DE COR BOTAO DO MENU */
+    background-color: chartreuse;
+    cursor: pointer;
+}

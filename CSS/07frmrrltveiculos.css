@@ -1,0 +1,130 @@
+body {
+    /* FUNDO DA TELA*/
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: linear-gradient(90deg, gray, rgb(0, 58, 58));
+}
+
+.nome-sistema {
+    /*FAIXA SUPERIOR*/
+    background-color: darkgoldenrod;
+    text-align: center;
+    transform: translate();
+}
+
+button {
+    /* BOTAO PARA VOLTAR AO MENU*/
+    background-color: dodgerblue;
+    border: none;
+    padding: 15px;
+    width: 10%;
+    border-radius: 15px;
+    color: black;
+    font-size: 20px;
+}
+button:hover {
+    /* INTERACAO PARA MUDAR DE COR BOTAO DO VOLTAR */
+    background-color: chartreuse;
+    cursor: pointer;
+}
+
+.contato {
+    /*BLOCO DE CONTATO*/
+    background-color: rgba(0, 0, 0, 0.3);
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    transform: translate(-75%, -50%);
+    padding: 20px;
+    border-radius: 15px;
+    color: white;
+    border: 3px solid darkgoldenrod;
+}
+
+.palavra-menu {
+    text-align: center;
+    color: white;
+    font-size: 25px;
+}
+
+.frm-clientes {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -30%);
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 10px;
+    border-radius: 15px;
+    width: 40%;
+    color: white;
+}
+
+fieldset {
+    border: 3px solid darkgoldenrod;
+}
+
+legend {
+    border: 3px solid white;
+    padding: 10px;
+    text-align: center;
+    background-color: darkgoldenrod;
+    border-radius: 10px;
+}
+
+.input-marca {
+    position: relative;
+}
+
+.input-modelo {
+    position: relative;
+}
+
+.input-placa {
+    position: relative;
+}
+
+.input-cor {
+    position: relative;
+}
+
+.inputUser {
+    background: none;
+    border: none;
+    border-bottom: 1px solid white;
+    outline: none;
+    color: white;
+    font-size: 15px;
+    width: 100%;
+    letter-spacing: 4px;
+}
+
+.labelInput {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.inputUser:focus~.labelInput,
+.inputUser:valid~.labelInput {
+    top: -20px;
+    font-size: 12px;
+    color: darkgoldenrod;
+}
+
+#update {
+    background-color: darkgoldenrod;
+    border: none;
+    padding: 15px;
+    width: 15%;
+    border-radius: 15px;
+    color: black;
+    font-size: 15px;
+    width: 100%;
+    cursor: pointer;
+}
+
+#update:hover {
+    background-color: gray;
+    cursor: pointer;
+}
