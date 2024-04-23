@@ -17,7 +17,7 @@
     </div>
     <br><a href="02menu.html" class="botao"><button>Voltar</button></a>
     <div class="frm-clientes">
-        <form class="form" action="002cofig04frmmensalista.php" method="POST">
+        <form class="form" action="PHP/02config04frmmensalista.php" method="POST">
             <fieldset>
                 <legend><b>CADASTRO MENSALISTA</b></legend>
                 <br>
@@ -26,16 +26,16 @@
                     <label for="nome" class="labelInput">Nome Completo</label><br><br/>
                 </div>
                 <div class="input-cpf">
-                    <input type="text" name="cpf" id="cpf" class="inputUser" maxlength="14" class="inputUser"
+                    <input type="text" name="cpf" id="cpf" class="inputUser" maxlength="14" class="inputUser" 
                         required>
                     <label for="cpf" class="labelInput">CPF</label><br><br/>
                 </div>
                 <div class="input-rg">
-                    <input type="text" name="rg" id="rg" class="inputUser" required>
+                    <input type="text" name="rg" id="rg" maxlength="12" class="inputUser" required>
                     <label for="rg" class="labelInput">RG</label><br><br>
                 </div>
                 <div class="input-celular">
-                    <input type="tel" name="celular" id="celular" class="inputUser" required>
+                    <input type="tel" name="celular" id="celular" maxlength="14" class="inputUser" required>
                     <label for="celular" class="labelInput">Celular</label><br/><br/>
                 </div>
                 <div class="center">
@@ -43,7 +43,7 @@
                     <input type="date" id="data_nas" name="data_nas" class="inputUser"><br><br>
                 </div>
                 <div class="input-cep">
-                    <input type="text" name="cep" id="cep" class="inputUser" required>
+                    <input type="text" name="cep" id="cep" maxlength="9" class="inputUser" required>
                     <label for="cep" class="labelInput">CEP</label><br><br>
                 </div>
                 <div class="input-end">
@@ -68,11 +68,11 @@
                     <label for="cidade" class="labelInput">Cidade</label><br><br/>
                 </div>
                 <div class="input-estado">
-                    <input type="text" name="estado" id="estado" class="inputUser" required>
+                    <input type="text" name="estado" id="estado" maxlength="2" class="inputUser" required>
                     <label for="estado" class="labelInput">Estado</label><br><br>
                 </div>
                 <input type="submit" value="Cadastrar usuário" class="btn btn-success"
-                    onclick="alert('Usuário Cadastrado com Sucesso')" window.location.href = '05cadastrarVeiculos.php'return false;" type="submit" name="salvarmensalista"
+                    onclick="alert('Usuário Cadastrado com Sucesso')" type="submit" name="salvarmensalista"
                     id="submit">
             </fieldset>
         </form>

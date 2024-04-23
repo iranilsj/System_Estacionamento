@@ -22,6 +22,24 @@ if (!empty($_GET['id']))
         }
     } 
 } 
+ // ATUALIZAR CADASTRO DOveiculo  
+if (isset($_POST['update'])) {
+    
+    $id = $_POST['id'];
+    $marca = $_POST['marca'];
+    $modelo = $_POST['modelo'];
+    $placa = $_POST['placa'];
+    $cor = $_POST['cor'];
+    // query para atualizar no banco de dados 05frmmensalista.php
+    $sqlAtualiza = "UPDATE cadveiculos SET Marca='$marca', Modelo='$modelo', Placa='$placa', Cor='$cor' WHERE id='$id' ";
+   
+    $result = $conexao->query($sqlAtualiza);
+   
+} 
+
+
+
+
 
 
 

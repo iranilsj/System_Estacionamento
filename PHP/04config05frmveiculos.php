@@ -12,3 +12,5 @@ if (isset($_POST['salvarveiculos'])) {
     $result = mysqli_query($conexao, "INSERT INTO cadveiculos(cadmensalista_id, Marca, Modelo, Placa, Cor) 
 VALUES ('$id', '$marca', '$modelo', '$placa', '$cor')");
 }
+
+

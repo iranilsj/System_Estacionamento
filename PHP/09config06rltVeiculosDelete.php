@@ -1,8 +1,8 @@
 <?php
 
 if (!empty($_GET['id'])) {
-
     include_once('01conexao.php');
+
 
     $id = $_GET['id'];
 
@@ -12,8 +12,9 @@ if (!empty($_GET['id'])) {
 
     if ($result->num_rows > 0) {
 
-        $sqlDelete =  "DELETE * FROM cadveiculos WHERE id=$id";
+        $sqlDelete =  "DELETE FROM cadveiculos WHERE id=$id";
         $resultDelete = $conexao->query($sqlDelete);
     }
-}
- // faltou finalizar
+}else {header('location: 06rltVeiculos.php');}
+
+?>

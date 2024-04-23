@@ -21,7 +21,7 @@ include_once('PHP/07config06frmrrltveiculos.php');
 	</div>
 	<br><a href="06rltVeiculos.php" class="botao"><button>Voltar</button></a>
 	<div class="frm-clientes">
-		<form method="POST" action="08config07updateveiculos.php">
+		<form method="POST" action="PHP/07config06frmrrltveiculos.php">
 			<fieldset>
 				<legend><b>Atualizar Veículos</b></legend>
 				<div class="input-marca">
@@ -42,7 +42,9 @@ include_once('PHP/07config06frmrrltveiculos.php');
 				</div>
 				
                 <input type="hidden" name="id" value="<?php echo $id ?>">
-               <input type="submit" value="Atualizar" name="update" id="update">
+               
+				<input type="submit" value="Atualizar" class="btn btn-success" onclick="alert('Veículo Atualizado com Sucesso')" name="update" id="update">
+				
 			</fieldset>
 	</div>
 	</form>
