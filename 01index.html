@@ -1,33 +1,55 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
     <meta charset="UTF-8"><!-- PARA RECEBER CARCTERES ESPECIAIS-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- PARA OCUPAR 100% DA JANELA-->
-    <link rel="shortcut icon"
-        href="https://icons.iconarchive.com/icons/cornmanthe3rd/metronome/256/System-settings-icon.png"
-        type="image/x-icon"> <!-- ICONE DA ABA DO NAVEGADOR-->
+    <link rel="shortcut icon" href="IMG/img-login.png"> <!-- ICONE DA ABA DO NAVEGADOR-->
+    <link rel="stylesheet" href="CSS/01index.css"> <!--PARA LINKAR O CSS DA PAGINA-->
+    <script src="Js/index.js" ></script><!--CHAMAR FUNCAO PARA VALIDACAO DO LOGIN-->
     <title>Login</title>
 </head>
-<link rel="stylesheet" href="CSS/01index.css"> <!--PARA LINKAR O CSS DA PAGINA-->
-
 <body>
-
-    <form action="02menu.html">
-        <div class="nome-sistema">
-            <hr>
-            <h2>-Sistema para Gerenciamento de estacionamento-</h2>
-            <hr>
-        </div>
-        <div class="tela-login">
-            <h1>Login</h1>
-            <input type="text" name="usuario" placeholder="Nome">
-            <br><br>
-            <input type="password" name="senha" placeholder="Senha">
-            <br><br>
-            <button type="submit">Entrar</button>
+    <div class="nome-sistema">
+        <hr>
+        <h2>-Sistema para Gerenciamento de estacionamento-</h2>
+        <hr>
+    </div>
+    <form>
+        <div class="formulario">
+            <div>
+                <div>
+                    <center><label>
+                            <h1>Login</h1>
+                        </label></center>
+                </div>
+                <input type="email" name="email" id="email" onchange="validateFields()"
+                    placeholder="       Digite Seu email"/>
+                <center>
+                    <div class="erro" id="email-required-erro"><b>Digite seu e-mail!</b></div>
+                    <div class="erro" id="email-invalid-erro"><b>E-mail Inválido!</b></div><br />
+                </center>
+            </div>
+            <div>
+                <input type="password" name="senha" id="password" onchange="validateFields()"
+                    placeholder="     Digite Sua Senha"/>
+                <center>
+                    <div class="erro" id="password-required-erro"><b>Digite sua Senha!</b></div>
+                </center><br/>
+            </div>
+            <div>
+                <div>
+                    <button type="button" class="entrar" id="login-button"  disabled="true" onclick="login()">Entrar</button>
+                </div>
+                <button type="button" class="recuperar" id="recover_password-button" disabled="true">Recuperar
+                    Senha</button>
+            </div>
+            <div>
+                <button type="button" class="registro" onclick="registro()">Registrar</button>
+            </div>
         </div>
     </form>
 </body>
+<script>
 
+</script>
 </html>
